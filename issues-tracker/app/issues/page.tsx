@@ -40,4 +40,6 @@ const IssuesPage = async () => {
   )
 }
 
+export const dynamic= 'foce-dynamic';
+//export const revalidate = 60; //refresh every 60 seconds
 export default IssuesPage
