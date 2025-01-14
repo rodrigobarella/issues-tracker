@@ -4,6 +4,7 @@ import { Status } from '@prisma/client';
 import IsssueTable, { columnNames, IssueQuery } from './IsssueTable';
 import IssueActions from './IssueActions';
 import { Flex } from '@radix-ui/themes';
+import { Metadata } from 'next'
 
 interface Props {
   searchParams: IssueQuery
@@ -50,4 +51,10 @@ const IssuesPage = async ({ searchParams }: Props) => {
 
 export const dynamic= 'foce-dynamic';
 //export const revalidate = 60; //refresh every 60 seconds
+
+export const metadata: Metadata = {
+  title: 'Issue Tracker - Issue List',
+  description: "View all project issues"
+};
+
 export default IssuesPage
