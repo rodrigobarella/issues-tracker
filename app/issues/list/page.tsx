@@ -49,7 +49,7 @@ const IssuesPage = async ({ searchParams }: Props) => {
   )
 }
 
-export const dynamic= 'foce-dynamic';
+export const dynamic= 'force-dynamic';
 //export const revalidate = 60; //refresh every 60 seconds
 
 export const metadata: Metadata = {
